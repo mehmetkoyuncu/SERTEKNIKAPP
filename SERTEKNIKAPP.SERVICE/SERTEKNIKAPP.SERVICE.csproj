@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SERTEKNIKAPP.DATA\SERTEKNIKAPP.DATA.csproj" />
+  </ItemGroup>
+
 </Project>
