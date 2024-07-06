@@ -17,5 +17,7 @@ namespace SERTEKNIKAPP.DATA.Context
         }
 
         public DbSet<SampleClass> _ { get; set; }
+        public DbSet<Offer> Offers { get; set; }
+        public DbSet<Company> Companies { get; set; }
     }
 }

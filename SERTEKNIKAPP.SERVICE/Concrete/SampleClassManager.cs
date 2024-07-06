@@ -73,4 +73,5 @@ namespace SERTEKNIKAPP.SERVICE.Concrete
         }
         
     }
+
 }
