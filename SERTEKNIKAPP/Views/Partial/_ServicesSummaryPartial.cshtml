@@ -1,0 +1,52 @@
+﻿@using SERTEKNIKAPP.COMMON.DTO
+ @model List<ServiceSummaryDTO>
+
+<section class="zn_section eluidb4b8f58a     section-sidemargins    section--no " id="eluidb4b8f58a">
+    <div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
+        <div class="row ">
+            <div class="eluid025dac68 col-md-12 col-sm-12 znColumnElement" id="eluid025dac68">
+                <div class="znColumnElement-innerWrapper-eluid025dac68 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+
+                    <div class="znColumnElement-innerContent">
+                        <div class="elm-stepsbox2 stepbox2 row eluid5b44b1c9  stepsbox2--light">
+                            <div class="col-sm-12">
+                                <div class="row gutter-md">
+
+                                    @{
+                                        var lastItemIndex = Model.Count - 1;
+                                    }
+
+                                    @foreach (var item in Model.Select((value, index) => new { Value = value, Index = index }))
+                                    {
+                                        <div class="col-sm-4">
+                                            <div class="gobox stepbox2-box u-trans-all-2s @(item.Value.IsSelected?"stepbox2-box--ok":"stepbox2-box--")  @(item.Index==0?"gobox-first":"") @(item.Index==lastItemIndex?"gobox-last stepbox2-last":"")">
+                                                @{
+                                                    if (item.Value.IsSelected)
+                                                    {
+                                                        <span class="stepbox2-okicon glyphicon glyphicon-ok-circle">
+
+                                                        </span>
+                                                    }
+                                                }
+                                                <div class="gobox-content stepbox2-content">
+                                                    <h4 class="stepbox2-title" itemprop="headline">
+                                                        @item.Value.Title
+                                                    </h4>
+                                                    <a href="@item.Value.Url" class="zn_step_link stepbox2-link" target="_blank" rel="noopener" itemprop="url">
+                                                    </a>
+                                                    <div class="stepbox2-desc">
+                                                        @item.Value.Content
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

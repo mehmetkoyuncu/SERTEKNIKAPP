@@ -1,0 +1,61 @@
+﻿@using SERTEKNIKAPP.COMMON.DTO
+@model SliderDTO
+
+<div class="kl-slideshow static-content__slideshow sc--weatherbox uh_flat_redish eluid7dd1523a  ">
+
+    <div class="bgback"></div>
+
+
+    <div class="kl-slideshow-inner static-content__wrapper static-content--fullscreen ">
+
+        <div class="static-content__source">
+
+            <div class="zn-bgSource ">
+                <div class="zn-bgSource-video no-fitvids ">
+                    <div class="zn-videoBg zn-videoBg--fadeIn zn-videoBg-gridOverlay zn-videoBg-gridOverlay--2 zn-videoBg--video is-loaded" data-video-setup="{&quot;video_ratio&quot;:&quot;1.7778&quot;,&quot;loop&quot;:true,&quot;autoplay&quot;:true,&quot;muted&quot;:true,&quot;controls&quot;:false,&quot;controls_position&quot;:&quot;bottom-right&quot;,&quot;mobile_play&quot;:&quot;no&quot;,&quot;fallback_image&quot;:false,&quot;mp4&quot;:&quot;https:\/\/yorktr.com\/wp-content\/uploads\/2020\/03\/YORK.mp4&quot;}" itemprop="video" itemtype="https://schema.org/VideoObject">
+                        <div id="video_background_video_0" class="evb-video-holder" style="z-index: -1; position: absolute; inset: 0px; overflow: hidden;">
+                            <video width="100%" height="100%" autoplay="" loop="" onended="this.play()" muted="" class="object-fit__cover" style="width: 100%; height: 100%;">
+                                <source src="@Model.VideoUrl" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="zn-bgSource-overlay" style="background: -webkit-linear-gradient(left, rgba(53,53,53,0.55) 0%,rgba(53,53,53,0.8) 100%); background: linear-gradient(to right, rgba(53,53,53,0.55) 0%,rgba(53,53,53,0.8) 100%); ">
+                </div>
+            </div>
+            <div class="th-sparkles">
+            </div>
+
+        </div>
+
+        <div class="static-content__inner container">
+            <div class="kl-slideshow-safepadding sc__container js-doObjParallax zn-objParallax" data-rellax-speed="-5" style="transform: translate3d(0px, 0px, 0px);">
+
+                <div class="static-content sc--wb-style">
+                    <h2 class="static-content__title text-center" itemprop="headline">
+                        @Model.Title
+                    </h2>
+                    <h3 class="static-content__subtitle text-center" itemprop="alternativeHeadline">
+                        @Model.Content
+                    </h3>
+                    <div class="sc__actionarea">
+                        <a href="@Model.ButtonUrl" class="btn btn-fullcolor btn-lg btn-third" title="TEKLİF İSTE" target="_self" itemprop="url">
+                            @Model.ButtonText
+                        </a>
+                        <h5 class="sc-infopop__text kl-font-alt">
+                            @Model.SmallText
+                        </h5>
+                        <div class="clear">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.kl-slideshow-inner__inner -->
+
+        <a class="tonext-btn js-tonext-btn" href="#" data-endof=".kl-slideshow-inner">
+            <span class="mouse-anim-icon"></span>
+        </a>
+
+    </div>
+    <div class="zn_header_bottom_style"></div>			<!-- header bottom style -->
+</div><!-- end kl-slideshow -->

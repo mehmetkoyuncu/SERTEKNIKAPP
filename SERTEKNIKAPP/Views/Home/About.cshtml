@@ -1,0 +1,154 @@
+﻿@using SERTEKNIKAPP.COMMON.DTO
+@model AboutDTO
+<div class="zn_pb_wrapper clearfix zn_sortable_content" data-droplevel="0">
+	<div id="page_header" class="page-subheader maskcontainer--mask5 page-subheader--custom site-subheader-cst uh_zn_def_header_style eluidbf9b672d  psubhead-stheader--absolute sh-titles--left sh-tcolor--light">
+
+		<div class="bgback"></div>
+
+
+		<div class="th-sparkles"></div>
+
+		<!-- DEFAULT HEADER STYLE -->
+		<div class="ph-content-wrap">
+			<div class="ph-content-v-center">
+				<div>
+					<div class="container">
+						<div class="row">
+
+							<div class="col-sm-12">
+								<div class="subheader-titles">
+									<h2 class="subheader-maintitle" itemprop="headline">Hakkımızda</h2>
+								</div>
+							</div>
+						</div>
+						<!-- end row -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="kl-mask kl-bottommask kl-mask--mask5 kl-mask--light">
+			<svg width="2700px" height="64px" class="svgmask" viewBox="0 0 2700 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<defs>
+					<filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-mask5">
+						<feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+						<feGaussianBlur stdDeviation="1.5" in="shadowOffsetInner1" result="shadowBlurInner1"></feGaussianBlur>
+						<feComposite in="shadowBlurInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+						<feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.45 0" in="shadowInnerInner1" type="matrix" result="shadowMatrixInner1"></feColorMatrix>
+						<feMerge>
+							<feMergeNode in="SourceGraphic"></feMergeNode>
+							<feMergeNode in="shadowMatrixInner1"></feMergeNode>
+						</feMerge>
+					</filter>
+				</defs>
+				<path d="M1892,0 L2119,44.993 L2701,45 L2701.133,63.993 L-0.16,63.993 L1.73847048e-12,45 L909,44.993 L1892,0 Z" class="bmask-bgfill" fill="#f5f5f5" filter="url(#filter-mask5)" style="fill:"></path>
+				<path d="M2216,44.993 L2093,55 L1882,6 L995,62 L966,42 L1892,0 L2118,44.993 L2216,44.993 L2216,44.993 Z" fill="#cd2122" class="bmask-customfill" filter="url(#filter-mask5)"></path>
+			</svg>
+		</div>
+	</div>
+	<section class="zn_section eluid7fc32048     section-sidemargins    zn_section--masked zn_section--relative section--skewed-flipped " id="eluid7fc32048">
+
+
+		<div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
+
+			<div class="row ">
+
+				<div class="eluide898dd65            col-md-12 col-sm-12   znColumnElement" id="eluide898dd65">
+
+
+					<div class="znColumnElement-innerWrapper-eluide898dd65 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+
+						<div class="znColumnElement-innerContent">					<div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--  tbk-icon-pos--after-title eluid338a1710 "><h3 class="tbk__title" itemprop="headline">@Model.Title</h3></div>				</div>
+					</div>
+
+
+				</div>
+
+				<div class="eluiddd5ed712  col-lg-offset-2 col-md-offset-2 col-sm-offset-2        col-md-8 col-sm-8   znColumnElement" id="eluiddd5ed712">
+
+
+					<div class="znColumnElement-innerWrapper-eluiddd5ed712 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+
+						<div class="znColumnElement-innerContent">
+							<div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--  tbk-icon-pos--after-title eluid144651df ">
+								<div class="tbk__text">
+									<h4><span style="font-family: Montserrat;">@Model.SmallText</span></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="kl-mask kl-bottommask kl-mask--shadow_simple kl-mask--light"></div>
+	</section>
+
+
+	<section class="zn_section eluid819ee8b9     section-sidemargins    section--skewed " id="eluid819ee8b9">
+
+
+		<div class="zn_section_size full_width zn-section-height--auto zn-section-content_algn--top ">
+
+			<div class="row gutter-sm">
+
+				<div class="eluidbb4584c5            col-md-5 col-sm-12   znColumnElement" id="eluidbb4584c5">
+
+
+					<div class="znColumnElement-innerWrapper-eluidbb4584c5 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+
+						<div class="znColumnElement-innerContent">
+							<div class="media-container eluid19b34c92  media-container--type- kl-overlay-fadeout  ">
+
+								<div class="zn-bgSource "><div class="zn-bgSource-image" style="background-image:url(@Model.ImageURL);background-repeat:no-repeat;background-position:center top;background-size:cover;background-attachment:scroll"></div><div class="zn-bgSource-overlay" style="background-color:rgba(137,173,178,0.3)"></div><div class="zn-bgSource-overlayGloss"></div></div>		<a class="media-container__link media-container__link-- media-container__link--style-circle " href="https://www.youtube.com/watch?v=cVt-3vbENOQ" data-lightbox="iframe">
+								</a>
+
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+				<div class="eluidc891c749            col-md-7 col-sm-12   znColumnElement" id="eluidc891c749">
+
+
+					<div class="znColumnElement-innerWrapper-eluidc891c749 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+
+						<div class="znColumnElement-innerContent">
+							<div class="zn_custom_container eluid8c74dcf2  smart-cnt--default   clearfix">
+								<div class="zn_col_eq_last container">
+									<div class="row zn_col_container-smart_container gutter-lg">
+
+										<div class="eluid0202bbe4            col-md-12 col-sm-12   znColumnElement" id="eluid0202bbe4">
+
+
+											<div class="znColumnElement-innerWrapper-eluid0202bbe4 znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+
+												<div class="znColumnElement-innerContent">
+												@Html.Raw(Model.HTMLContent)
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+	@await Html.PartialAsync("~/Views/Partial/_RequestQuotePartial.cshtml");
+
+</div>

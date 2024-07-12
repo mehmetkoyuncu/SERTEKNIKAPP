@@ -6,4 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\js\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SERTEKNIKAPP.COMMON\SERTEKNIKAPP.COMMON.csproj" />
+  </ItemGroup>
+
 </Project>

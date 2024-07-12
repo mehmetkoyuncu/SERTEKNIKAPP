@@ -1,8 +1,16 @@
-﻿@{
+﻿@model IndexViewModel
+@{
     ViewData["Title"] = "Home Page";
 }
+@await Html.PartialAsync("~/Views/Partial/_VideoSliderPartial.cshtml",Model.Slider)
+@await Html.PartialAsync("~/Views/Partial/_ServicesSummaryPartial.cshtml",Model.ServiceSummaryList);
+@await Html.PartialAsync("~/Views/Partial/_InfoViewPartial.cshtml",Model.Info);
+@await Html.PartialAsync("~/Views/Partial/_ServicesPartial.cshtml",Model.ServiceList);
+@await Html.PartialAsync("~/Views/Partial/_RequestQuotePartial.cshtml");
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+
+
+
+
+

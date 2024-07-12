@@ -5,45 +5,250 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - SERTEKNIKAPP</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/SERTEKNIKAPP.styles.css" asp-append-version="true" />
+    <link href="~/lib/flag-icons/css/flag-icons.min.css" rel="stylesheet" />
+    <link href="~/css/layout.css" rel="stylesheet" />
+    <link href="~/css/zion-builder/znb.css" rel="stylesheet" />
+    <link href="~/css/sliders/static_content.css" rel="stylesheet" />
+    <link href="~/css/dynamic.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/template.css" rel="stylesheet" />
+    <link href="~/lib/font-awesome/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="~/css/layoutgrid.css" rel="stylesheet" />
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SERTEKNIKAPP</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+<body class="home page-template-default page page-id-2378 res1170 kl-follow-menu kl-skin--light" itemscope="itemscope" itemtype="https://schema.org/WebPage" cz-shortcut-listen="true">
+    <div id="page_wrapper">
+        <header id="header" class="site-header  style7 cta_button  header--follow    sticky-resize headerstyle--default site-header--absolute nav-th--light sheader-sh--light" role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+            <div class="kl-header-bg "></div>	<div class="site-header-wrapper sticky-top-area">
+                <div class="site-header-top-wrapper topbar-style--default  sh--light">
+                    <div class="siteheader-container container">
+                        <div class="fxb-row site-header-row site-header-top ">
+                            <div class="fxb-col fxb fxb-start-x fxb-center-y fxb-basis-auto site-header-col-left site-header-top-left">
+                                <div class="sh-component kl-header-toptext kl-font-alt">
+                                    <span style="font-family: Montserrat; color: #ffffff;">
+                                        <a style="color: #ffffff;" href="/YORK_VRF_KATALOG.pdf">
+                                            York Vrf Katalog
+                                        </a>   |
+                                        <a style="color: #ffffff;" href="/YORK_VRF_TEKNIK_DATA.xlsx">
+                                            York Vrf Data Book
+                                        </a>
+                                    </span>
+                                    <div class="no_translate transposh_flags">
+                                        <a href="/" class="tr_active">
+                                            <span title="Türkçe" class="trf trf-tr">
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - SERTEKNIKAPP - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                                            </span>
+                                        </a>
+                                        <a href="/en/">
+                                            <span title="English" class="trf trf-us"></span>
+                                        </a>
+                                        <a href="/af/">
+                                            <span title="Afrikaans" class="trf trf-za">
+
+                                            </span>
+                                        </a>
+                                        <a href="/ar/">
+                                            <span title="العربية" class="trf trf-sa">
+
+                                            </span>
+                                        </a>
+                                        <a href="/hy/">
+                                            <span title="Հայերեն" class="trf trf-am">
+
+                                            </span>
+                                        </a>
+                                        <a href="/fr/">
+                                            <span title="Français" class="trf trf-fr">
+
+                                            </span>
+                                        </a>
+                                        <a href="/ru/">
+                                            <span title="Русский" class="trf trf-ru">
+
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto site-header-col-right site-header-top-right">
+                                <div class="sh-component zn_header_top_nav-wrapper ">
+                                    <span class="headernav-trigger js-toggle-class" data-target=".zn_header_top_nav-wrapper" data-target-class="is-opened"></span><ul id="menu-ust-menu-1" class="zn_header_top_nav topnav topnav-no-sc clearfix">
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3267"><a href="mailto:info@yorktr.com">Mail.: @(ViewBag.Company.Mail)</a></li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3449"><a href="#">|</a></li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3448"><a href="tel:08502509675">Servis. : @(ViewBag.Company.Phone1)</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3459"><a href="https://www.yorktr.com/3454-2/">–</a></li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3460"><a href="tel:00902166365300">@(ViewBag.Company.Phone2)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div><!-- /.site-header-top -->
+
+                        <div class="separator site-header-separator "></div>
+
+                    </div>
+                </div><!-- /.site-header-top-wrapper -->
+
+                <div class="kl-top-header site-header-main-wrapper clearfix   header-no-bottom  sh--light">
+
+                    <div class="container siteheader-container ">
+
+                        <div class="fxb-col fxb-basis-auto">
+
+
+
+                            <div class="fxb-row site-header-row site-header-main ">
+
+                                <div class="fxb-col fxb fxb-start-x fxb-center-y fxb-basis-auto fxb-grow-0 fxb-sm-full site-header-col-left site-header-main-left">
+                                    <div id="logo-container" class="logo-container   logosize--no zn-original-logo">
+                                        <!-- Logo -->
+                                        <h1 class="site-logo logo " id="logo"><a href="https://www.yorktr.com/" class="site-logo-anch"><img class="logo-img site-logo-img" src="@(ViewBag.Company.LogoUrl)" width="200" height="47" alt="York Türkiye" title="York Vrf | Fancoil | Rooftop | Klima Santrali | Chiller"></a></h1>			<!-- InfoCard -->
+                                    </div>
+
+                                    <div class="separator site-header-separator visible-xs"></div>
+                                </div>
+
+                                <div class="fxb-col fxb fxb-center-x fxb-center-y fxb-basis-auto fxb-sm-half site-header-col-center site-header-main-center">
+                                    <div class="sh-component main-menu-wrapper" role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+
+                                       @*  <div class="zn-res-menuwrapper">
+                                            <a href="#" class="zn-res-trigger zn-menuBurger zn-menuBurger--4--m zn-menuBurger--anim3" id="zn-res-trigger">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </a>
+                                        </div><!-- end responsive menu --> *@
+                                        <div id="main-menu" class="main-nav mainnav--overlay mainnav--active-uline mainnav--pointer-dash nav-mm--light zn_mega_wrapper ">
+                                            <ul id="menu-ana-menu" class="main-menu main-menu-nav zn_mega_menu ">
+                                                <li id="menu-item-2871" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2378 current_page_item menu-item-2871 active  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="/Home/Index" class=" main-menu-link main-menu-link-top"><span>Ana Sayfa</span></a></li>
+                                                <li id="menu-item-2922" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2922  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="/Home/About"><span>Hakkımızda</span></a></li>
+                                                <li id="menu-item-2921" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2921  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="/Home/Services" class=" main-menu-link main-menu-link-top"><span>Hizmetlerimiz</span></a></li>
+                                                <li id="menu-item-2923" class="main-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2923 menu-item-mega-parent menu-item-has-children  main-menu-item-top  menu-item-even menu-item-depth-0">
+                                                    <a href="#" class=" main-menu-link main-menu-link-top"><span>Ürünlerimiz</span></a>
+                                                    <div class="zn_mega_container container">
+                                                        <div class="zn_mega_menu_container_wrapper">
+                                                            <ul class="clearfix">
+                                                                <li id="menu-item-3020" class="main-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3020 col-sm-4 main-menu-item-sub  menu-item-odd menu-item-depth-1">
+                                                                    <a href="https://www.yorktr.com/york-vrf-klima-dis-unite/" class=" main-menu-link main-menu-link-sub zn_mega_title "><span>DIŞ ÜNİTE</span></a>
+                                                                    <ul class="clearfix">
+                                                                        <li id="menu-item-3117" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-3117  main-menu-item-sub main-menu-item-sub-sub menu-item-even menu-item-depth-2"><a href="https://www.yorktr.com/york-vrf-mini-vrf-dis-unite/" class=" main-menu-link main-menu-link-sub"><span>Mini Vrf Dış Ünite</span></a></li>
+                                                                        <li id="menu-item-3116" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-3116  main-menu-item-sub main-menu-item-sub-sub menu-item-even menu-item-depth-2"><a href="https://www.yorktr.com/york-vrf-heat-pump-dis-unite/" class=" main-menu-link main-menu-link-sub"><span>Heat Pump Dış Ünite</span></a></li>
+                                                                        <li id="menu-item-3115" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-3115  main-menu-item-sub main-menu-item-sub-sub menu-item-even menu-item-depth-2"><a href="https://www.yorktr.com/york-vrf-heat-recovery-dis-unite/" class=" main-menu-link main-menu-link-sub"><span>Heat Recovery Dış Ünite</span></a></li>
+                                                                        <li id="menu-item-3114" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-3114  main-menu-item-sub main-menu-item-sub-sub menu-item-even menu-item-depth-2"><a href="https://www.yorktr.com/york-vrf-su-sogutmali-dis-unite/" class=" main-menu-link main-menu-link-sub"><span>Su Soğutmalı Dış Ünite</span></a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li id="menu-item-3019" class="main-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3019 col-sm-4 main-menu-item-sub  menu-item-odd menu-item-depth-1">
+                                                                    <a href="https://www.yorkvrf.com.tr/york-vrf-klima-ic-unite/" class=" main-menu-link main-menu-link-sub zn_mega_title "><span>İÇ ÜNİTE</span></a>
+                                                                    <ul class="clearfix">
+                                                                        <li id="menu-item-2877" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2877  main-menu-item-sub main-menu-item-sub-sub menu-item-even menu-item-depth-2"><a href="https://www.yorktr.com/york-vrf-kaset-tipi-ic-unite/" class=" main-menu-link main-menu-link-sub"><span>Kaset Tipi İç Ünite</span></a></li>
+                                                                        <li id="menu-item-3086" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-3086  main-menu-item-sub main-menu-item-sub-sub menu-item-even menu-item-depth-2"><a href="https://www.yorktr.com/york-vrf-duvar-tipi-ic-unite/" class=" main-menu-link main-menu-link-sub"><span>Duvar Tipi İç Ünite</span></a></li>
+                                                                        <li id="menu-item-3085" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-3085  main-menu-item-sub main-menu-item-sub-sub menu-item-even menu-item-depth-2"><a href="https://www.yorktr.com/york-vrf-dusuk-statik-kanalli-tip-ic-unite/" class=" main-menu-link main-menu-link-sub"><span>Düşük Statik Kanallı Tip İç Ünite</span></a></li>
+                                                                        <li id="menu-item-3088" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-3088  main-menu-item-sub main-menu-item-sub-sub menu-item-even menu-item-depth-2"><a href="https://www.yorktr.com/york-vrf-orta-statik-kanalli-tip-ic-unite/" class=" main-menu-link main-menu-link-sub"><span>Orta Statik Kanallı Tip İç Ünite</span></a></li>
+                                                                        <li id="menu-item-3090" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-3090  main-menu-item-sub main-menu-item-sub-sub menu-item-even menu-item-depth-2"><a href="https://www.yorktr.com/york-vrf-yuksek-statik-kanalli-tip-ic-unite/" class=" main-menu-link main-menu-link-sub"><span>Yüksek Statik Kanallı Tip İç Ünite</span></a></li>
+                                                                        <li id="menu-item-3087" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-3087  main-menu-item-sub main-menu-item-sub-sub menu-item-even menu-item-depth-2"><a href="https://www.yorktr.com/york-vrf-iki-yon-kaset-tipi-ic-unite/" class=" main-menu-link main-menu-link-sub"><span>İki Yön Kaset Tipi İç Ünite</span></a></li>
+                                                                        <li id="menu-item-3089" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-3089  main-menu-item-sub main-menu-item-sub-sub menu-item-even menu-item-depth-2"><a href="https://www.yorktr.com/york-vrf-yer-tavan-tipi-ic-unite/" class=" main-menu-link main-menu-link-sub"><span>Yer Tavan Tipi İç Ünite</span></a></li>
+                                                                        <li id="menu-item-3093" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-3093  main-menu-item-sub main-menu-item-sub-sub menu-item-even menu-item-depth-2"><a href="https://www.yorktr.com/york-vrf-konsol-tipi-ic-unite/" class=" main-menu-link main-menu-link-sub"><span>Konsol Tipi İç Ünite</span></a></li>
+                                                                        <li id="menu-item-3083" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-3083  main-menu-item-sub main-menu-item-sub-sub menu-item-even menu-item-depth-2"><a href="https://www.yorktr.com/york-isi-geri-kazanim-cihazlari/" class=" main-menu-link main-menu-link-sub"><span>Isı Geri Kazanım Cihazları</span></a></li>
+                                                                        <li id="menu-item-3084" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-3084  main-menu-item-sub main-menu-item-sub-sub menu-item-even menu-item-depth-2"><a href="https://www.yorktr.com/york-taza-hava-cihazlari/" class=" main-menu-link main-menu-link-sub"><span>Taza Hava Cihazları</span></a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li id="menu-item-3021" class="main-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3021 col-sm-4 main-menu-item-sub  menu-item-odd menu-item-depth-1">
+                                                                    <a href="https://www.yorkvrf.com.tr/york-vrf-klima-kontrol-elemanlari/" class=" main-menu-link main-menu-link-sub zn_mega_title "><span>KONTROL ELEMANLARI</span></a>
+                                                                    <ul class="clearfix">
+                                                                        <li id="menu-item-3112" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-3112  main-menu-item-sub main-menu-item-sub-sub menu-item-even menu-item-depth-2"><a href="https://www.yorktr.com/york-vrf-kablolu-kumanda/" class=" main-menu-link main-menu-link-sub"><span>Kablolu Kumanda</span></a></li>
+                                                                        <li id="menu-item-3113" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-3113  main-menu-item-sub main-menu-item-sub-sub menu-item-even menu-item-depth-2"><a href="https://www.yorktr.com/york-vrf-kablosuz-kumanda/" class=" main-menu-link main-menu-link-sub"><span>Kablosuz Kumanda</span></a></li>
+                                                                        <li id="menu-item-3111" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-3111  main-menu-item-sub main-menu-item-sub-sub menu-item-even menu-item-depth-2"><a href="https://www.yorktr.com/york-vrf-merkezi-kumanda/" class=" main-menu-link main-menu-link-sub"><span>Merkezi Kumanda</span></a></li>
+                                                                        <li id="menu-item-3110" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-3110  main-menu-item-sub main-menu-item-sub-sub menu-item-even menu-item-depth-2"><a href="https://www.yorktr.com/york-vrf-dokunmatik-merkezi-kumanda/" class=" main-menu-link main-menu-link-sub"><span>Dokunmatik Merkezi Kumanda</span></a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li id="menu-item-3145" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-3145  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="/Home/UsingArea" class=" main-menu-link main-menu-link-top"><span>Kullanım Alanı</span></a></li>
+                                                <li id="menu-item-3409" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-3409  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="/Home/Portfoy" class=" main-menu-link main-menu-link-top"><span>Portföy</span></a></li>
+                                                <li id="menu-item-2919" class="main-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2919  main-menu-item-top  menu-item-even menu-item-depth-0"><a href="https://www.yorktr.com/iletisim/" class=" main-menu-link main-menu-link-top"><span>İletişim</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- end main_menu -->
+                                </div>
+
+                                <div class="fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto fxb-sm-half site-header-col-right site-header-main-right">
+
+                                    <div class="fxb-col fxb fxb-end-x fxb-center-y fxb-basis-auto fxb-sm-half site-header-main-right-top">
+                                        <a href="#eluidb1ece391" id="ctabutton" class="sh-component ctabutton kl-cta-ribbon " data-lightbox="inline" itemprop="url"><strong>TEKLİF</strong>İSTE<svg version="1.1" class="trisvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" preserveAspectRatio="none" width="14px" height="5px" viewBox="0 0 14.017 5.006" enable-background="new 0 0 14.017 5.006" xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.016,0L7.008,5.006L0,0H14.016z"></path></svg></a>
+                                    </div>
+
+
+                                </div>
+
+                            </div><!-- /.site-header-main -->
+
+
+                        </div>
+
+                    </div><!-- /.siteheader-container -->
+
+                </div><!-- /.site-header-main-wrapper -->
+
+
+
+            </div><!-- /.site-header-wrapper -->
+        </header>
+
+
+
+        <div class="zn_pb_wrapper clearfix zn_sortable_content" data-droplevel="0">
+
+
+
+
+
+            @RenderBody()
+
+
+
+
         </div>
-    </footer>
+
+        <div class="znpb-footer-smart-area">
+        </div>
+        <footer id="footer" class="site-footer" role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter">
+            <div class="container">
+                <div class="row"><div class="col-sm-5"></div><div class="col-sm-4"></div><div class="col-sm-3"></div></div><!-- end row --><div class="row"><div class="col-sm-6"></div><div class="col-sm-6"></div></div><!-- end row -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="bottom site-footer-bottom clearfix">
+
+
+
+
+                            <div class="copyright footer-copyright">
+                                <a href="https://www.yorktr.com" class="footer-copyright-link"><img class="footer-copyright-img" src="@ViewBag.Company.LogoUrl" alt="York Türkiye"></a><p class="footer-copyright-text">© 2015 York Tr</p>
+                            </div><!-- end copyright -->
+                        </div>
+                        <!-- end bottom -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+        </footer>
+    </div><!-- end page_wrapper -->
+
+    <a href="#" id="totop" class="u-trans-all-2s js-scroll-event" data-forch="300" data-visibleclass="on--totop">TOP</a>
+
+
+
+
+
+    <script src="~/lib/font-awesome/js/all.min.js"></script>
+    <script src="~/lib/font-awesome/js/all.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery.isotope/isotope.pkgd.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
+
 </html>
