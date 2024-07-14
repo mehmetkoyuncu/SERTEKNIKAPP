@@ -296,7 +296,47 @@ namespace SERTEKNIKAPP.Controllers
                 Phone2 = "0 (216) 636 53 00"
             };
             ViewBag.Company = companyInfo;
-            return View();
+
+            List<PortfoyCategoryDTO> portfoyCategoryDTOs = new List<PortfoyCategoryDTO>()
+            {
+                new PortfoyCategoryDTO()
+                {
+                    Code="hastane",
+                    Text="HASTANE",
+                    PortfoyList =
+                    {
+                        new PortfoyDTO()
+                        {
+                            PortfoyCategoryCode="hastane",
+                            Text="AVRUPA GÖZ HASTANESİ"
+                        },
+                        new PortfoyDTO()
+                        {
+                            PortfoyCategoryCode="hastane",
+                            Text="BİLGİ HASTANESİ"
+                        },
+                    }
+                },
+                 new PortfoyCategoryDTO()
+                {
+                    Code="otel",
+                    Text="OTEL",
+                    PortfoyList =
+                    {
+                        new PortfoyDTO()
+                        {
+                            PortfoyCategoryCode="otel",
+                            Text="DORA OTEL"
+                        },
+                        new PortfoyDTO()
+                        {
+                            PortfoyCategoryCode="otel",
+                            Text="VENUS OTEL"
+                        },
+                    }
+                }
+            };
+            return View(portfoyCategoryDTOs);
         }
 
 			[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
