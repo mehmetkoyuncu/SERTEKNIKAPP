@@ -1,11 +1,18 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Application.Features.Abouts.Commands.Create;
+using Application.Features.Abouts.Queries.GetList;
+using Application.Features.CompanyInfoes.Queries.GetList;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using NArchitecture.Core.Application.Responses;
 using SERTEKNIKAPP.COMMON.DTO;
 using SERTEKNIKAPP.Models;
 using System.Diagnostics;
+using WebAPI.Controllers;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace SERTEKNIKAPP.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         private readonly ILogger<HomeController> _logger;
 
@@ -14,7 +21,7 @@ namespace SERTEKNIKAPP.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             CompanyInfoDTO companyInfo = new CompanyInfoDTO()
             {
