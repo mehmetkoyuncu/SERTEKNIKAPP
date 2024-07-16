@@ -23,9 +23,13 @@ namespace SERTEKNIKAPP.Controllers
 
         public async Task<IActionResult> Index()
         {
+            GetListCompanyInfoQuery query = new() { };
+
+            GetListResponse<GetListCompanyInfoListItemDto> response = await Mediator.Send(query);
+            
             CompanyInfoDTO companyInfo = new CompanyInfoDTO()
             {
-                LogoUrl = "/img/york-1.png",
+                LogoUrl = "/img/york-1.png",//response.Items[0].LogoUrl
                 Mail = "info@yorktr.com",
                 Phone1 = "0 (850) 250 96 75",
                 Phone2 = "0 (216) 636 53 00"
