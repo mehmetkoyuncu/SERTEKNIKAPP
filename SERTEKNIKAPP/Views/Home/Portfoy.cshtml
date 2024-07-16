@@ -1,4 +1,8 @@
-﻿<div class="zn_pb_wrapper clearfix zn_sortable_content" data-droplevel="0">
+﻿@using SERTEKNIKAPP.COMMON.DTO
+@model List<PortfoyCategoryDTO>
+
+
+<div class="zn_pb_wrapper clearfix zn_sortable_content" data-droplevel="0">
     <div id="page_header" class="page-subheader maskcontainer--mask5 page-subheader--custom site-subheader-cst uh_zn_def_header_style eluid240ef756 psubhead-stheader--absolute sh-titles--left sh-tcolor--light">
         <div class="bgback"></div>
         <div class="th-sparkles"></div>
@@ -48,34 +52,32 @@
                             <div class="elm-portfolio-archive eluid4ccd1aa7 ">
                                 <div class="hg-portfolio-sortable kl-ptfsortable portfolio-sort--light element-scheme--light kl-ptfsortable-toolbar-left" data-sortby="name" data-sortdir="asc">
                                     <!-- sorting toolbar -->
+
                                     <ul id="portfolio-nav" class="ptf-stb-ptfnav kl-ptfsortable-nav kl-font-alt fixclear">
                                         <li class="kl-ptfsortable-nav-item current"><a class="kl-ptfsortable-nav-link" href="#" data-filter="*">TÜMÜ</a></li>
-                                        <li class="kl-ptfsortable-nav-item"><a class="kl-ptfsortable-nav-link" href="#" data-filter=".hastane_sort">HASTANE</a></li>
-                                        <li class="kl-ptfsortable-nav-item"><a class="kl-ptfsortable-nav-link" href="#" data-filter=".otel_sort">OTEL</a></li>
-                                        <li class="kl-ptfsortable-nav-item"><a class="kl-ptfsortable-nav-link" href="#" data-filter=".universite_sort">ÜNİVERSİTE</a></li>
-                                        <li class="kl-ptfsortable-nav-item"><a class="kl-ptfsortable-nav-link" href="#" data-filter=".yurt-disi_sort">YURT DIŞI</a></li>
+                                        @foreach (var item in Model)
+                                        {
+                                            var filterText = $".{item.Code}_sort";
+
+                                            <li class="kl-ptfsortable-nav-item"><a class="kl-ptfsortable-nav-link" href="#" data-filter="@filterText">@item.Text</a></li>
+                                        }
                                     </ul><!-- nav toolbar -->
+
                                     <div class="clearfix"></div>
                                     <ul id="thumbs" class="ptf-stb-thumbs kl-ptfsortable-items fixclear isotope-initialized" data-columns="4" data-layout-mode="masonry">
-                                        <li class="item kl-ptfsortable-item universite_sort" data-date="1586696856">
-                                            <div class="inner-item kl-ptfsortable-item-inner">
-                                                <div class="img-intro kl-ptfsortable-imgintro portfolio-item-overlay-imgintro"></div>
-                                                <h4 class="title kl-ptfsortable-item-title">
-                                                    <span class="name">AHİ EVRAN ÜNİVERSİTESİ</span>
-                                                </h4>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </li>
-                                        <li class="item kl-ptfsortable-item otel_sort" data-date="1586696856">
-                                            <div class="inner-item kl-ptfsortable-item-inner">
-                                                <div class="img-intro kl-ptfsortable-imgintro portfolio-item-overlay-imgintro"></div>
-                                                <h4 class="title kl-ptfsortable-item-title">
-                                                    <span class="name">Bir Otel</span>
-                                                </h4>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </li>
-                                        <!-- Diğer portföy öğeleri -->
+                                        @foreach (var item in Model.SelectMany(x => x.PortfoyList).ToList())
+                                        {
+                                            var filterText = $"{item.PortfoyCategoryCode}_sort";
+                                            <li class="item kl-ptfsortable-item @filterText" data-date="1586696856">
+                                                <div class="inner-item kl-ptfsortable-item-inner">
+                                                    <div class="img-intro kl-ptfsortable-imgintro portfolio-item-overlay-imgintro"></div>
+                                                    <h4 class="title kl-ptfsortable-item-title">
+                                                        <span class="name">@item.Text</span>
+                                                    </h4>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </li>
+                                        }
                                     </ul>
                                     <!-- end items list -->
                                 </div><!-- end Portfolio page -->
@@ -104,6 +106,10 @@
             var filterValue = $(this).attr('data-filter');
             // Filtreyi uygula ve yeniden düzenle
             $portfolioItems.isotope({ filter: filterValue });
+
+            // 'current' sınıfını değiştir
+            $('.kl-ptfsortable-nav-item').removeClass('current');
+            $(this).parent().addClass('current');
         });
     });
 </script>
